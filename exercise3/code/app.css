@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
+label{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.text-input{
+    width: 60%;
+    padding: 12px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.date-input{
+    padding: 12px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    padding: 2%;
+    background-color: #2b2d42;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar-title-subtitle{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar-title{
+    font-size: 24px;
+    font-family: 'Source Sans pro', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    justify-content: flex-start;
+}
+
+.nav-bar-subtitle{
+    float: left;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 400;
+    color: #ffffff;
+    justify-content: flex-end;
+}
+
+.input-container{
+    padding: 1% 2%;
+}
