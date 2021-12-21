@@ -11,6 +11,15 @@ label{
     font-size: 16px;
 }
 
+.submit{
+    padding: 12px;
+    background-color: #e63946;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .text-input{
     width: 60%;
     padding: 12px;

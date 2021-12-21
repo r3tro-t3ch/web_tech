@@ -15,79 +15,111 @@
         </div>
 
         <!-- Input -->
-        <form autocomplete="on">
+        <form autocomplete="on" action="/action_page.php" method="get">
 
             <!--name-->
             <div class="input-container">
                 <label for="user-name">Name</label><br>
-                <input class="text-input" type="text" id="user-name" >    
+                <input class="text-input" type="text" id="user-name" placeholder="Name" autofocus required>    
             </div>
 
             <!--date time-->
             <div class="input-container">
                 <label for="dob">Date of Birth</label><br>
-                <input class="date-input" type="datetime-local" id="dob">    
+                <input class="date-input" type="datetime-local" id="dob" required>    
             </div>
 
             <!--email-->
             <div class="input-container">
                 <label for="email-id">Email Id</label><br>
-                <input class="text-input" type="text" id="email-id">    
+                <input class="text-input" type="text" id="email-id" placeholder="Email" required>    
             </div>
 
             <!--phone number-->
             <div class="input-container">
                 <label for="phonr-number">Phone Number</label><br>
-                <input class="text-input" type="number" maxlength="10" minlength="10" size="10" id="phone-number">    
+                <input class="text-input" type="number" step=10000 required maxlength="10" minlength="10" size="10" id="phone-number">    
             </div>
 
             <!--budget-->
             <div class="input-container">
                 <label for="budget">Budget 0-20000</label><br>
-                <input class="text-input" type="range" max="20000" min="0" id="budget">
-                
+                <input class="text-input" type="range" max="20000" min="0" id="budget" required value="0"  oninput="this.form.budgetoutput.value=this.value" ><br>
+                <input type="number" min="0" max="20000" value="0" class="input-text" id="budgetoutput" disabled/>            
             </div>
 
             <!--search-->
             <div class="input-container">
                 <label for="search">Search</label><br>
-                <input class="text-input" type="search" id="search">    
+                <input class="text-input" type="search" placeholder="Search" id="search" required>    
             </div>
 
 
             <!--tel-->
             <div class="input-container">
                 <label for="user-telephone">Advertizement Telephone number</label><br>
-                <input class="text-input" type="tel" id="user-telephone" pattern="[6-9]{1}[0-9]{9}" autocomplete="off">    
+                <input class="text-input" placeholder="9808675645" type="tel" id="user-telephone" required pattern="[6-9]{1}[0-9]{9}" autocomplete="off">    
             </div>
 
             <!--time-->
             <div class="input-container">
                 <label for="user-name">Advertisement Time</label><br>
-                <input class="text-input" type="time" id="time">    
+                <input class="text-input" type="time" id="time" required>    
             </div>
 
+            <!--multiple-->
+            <div class="input-container">
+
+                <label for="field">Choose your field</label><br>
+                <select id="field" multiple class="text-input" required>
+                    <option value="art">Art</option>
+                    <option value="craft">Craft</option>
+                    <option value="painting">Painting</option>
+                    <option value="fashion">Fashion</option>
+                </select>
+            </div>
+
+            <!--List-->
+            <div class="input-container">
+                <label for="city">City of Advertisement</label><br>
+                <input list="cities" id="city" class="text-input">
+                <datalist id="cities">
+                    <option value="Bengaluru">
+                    <option value="Mumbai">
+                    <option value="Delhi">
+                    <option value="Kolkata">
+                </datalist>
+            </div>
 
             <!--week-->
             <div class="input-container">
                 <label for="week">Advertisement Week</label><br>
-                <input class="text-input" type="week" id="week">    
+                <input class="text-input" type="week" id="week" required>    
             </div>
 
             <!--month-->
             <div class="input-container">
                 <label for="month">Advertisement Month</label><br>
-                <input class="text-input" type="month" id="month">    
+                <input class="text-input" type="month" id="month" required>    
             </div>
 
             <!--url-->
             <div class="input-container">
                 <label for="url">Portfolio URL</label><br>
-                <input class="text-input" type="url" id="url">    
+                <input class="text-input" type="url" id="url" placeholder="https://domain-name" required>    
             </div>
 
+            <div class="input-container">
+                <button type="submit" value="Submit" class="submit">Submit</button>   
+            </div>
 
-            
+            <div class="input-container">
+                <button type="submit" class="submit" formenctype="text/plain">Submit with formenctype</button>
+            </div>
+
+            <div class="input-container">
+                <button type="submit" class="submit" formnovalidate="formnovalidate">Submit Without Validation</button>
+            </div>
             
         </form>
 
