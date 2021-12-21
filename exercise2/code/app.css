@@ -1,0 +1,82 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+label{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 0.5%;
+}
+
+th{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 0.25%;
+}
+
+button{
+    padding: 12px 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #e63946;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 700;
+    color: white;
+}
+
+th, td{
+    padding: 1%;
+    text-align: center;
+}
+
+form{
+    padding: 2%;
+}
+
+.sub-title{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 0.5%;
+}
+
+.radio-input{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0.25%;
+}
+
+.page-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: xx-large;
+    margin: 2%;
+}
+
+.text-input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 1%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.table-text-input{
+    padding: 12px 20px;
+    margin: 8px 1%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.date-input {
+    padding: 12px 20px;
+    margin: 8px 1%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

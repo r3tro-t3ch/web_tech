@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exercise 2
+        </title>
+    </head>
+
+    <body>
+
+        <!-- Css -->
+        <link rel="stylesheet" href="app.css">
+
+        <!-- Title -->
+        <div class="page-title">
+            <h4>
+                Student Registration
+            </h4>
+        </div>
+
+        <form>
+
+            <!-- Basic input -->
+            <div>
+
+                <label for="student_name">Student Name</label><br>
+                <input id="student_name" class="text-input" placeholder="Your name..">
+                <br>
+                <br>
+
+                <label for="father_name">Father's Name</label><br>
+                <input id="father_name" class="text-input" placeholder="Father name..">
+                <br>
+                <br>
+
+                <label for="mother_name">Mother's Name</label><br>
+                <input id="mother_name" class="text-input" placeholder="Mother name..">
+                <br>
+                <br>
+
+                <label for="student_email">Student email</label><br>
+                <input type="email" id="student_email" class="text-input" placeholder="Email..">
+                <br>
+                <br>
+
+                <label for="student_phone_number">Student phone number</label><br>
+                <input id="student_phone_number" class="text-input" placeholder="Phone Number">
+                <br>
+                <br>
+
+                <label for="dob">DOB</label><br>
+                <input type="date" id="dob" class="date-input">
+                <br>
+                <br>
+
+                <label for="doj">Date of Joining</label><br>
+                <input type="date" id="doj" class="date-input">
+                <br>
+                <br>
+
+            </div>
+            <br>
+
+            <!-- Gender -->
+            <div>
+                <p class="sub-title">Gender</p> <br>
+                <div class="sub-title"><input name="gender" class="radio-input" type="radio" id="male">Male</div>
+                <div class="sub-title"><input name="gender" class="radio-input" type="radio" id="female">Female</div>
+            </div>
+            <br>
+
+            <!-- Under graduate degree -->
+            <div id="undergraduate_degree">
+
+
+                <p class="sub-title">Undergradute course</p> <br>
+                <div class="sub-title"><input name="undergraduate" type="radio" id="bca">BCA</div>
+                <div class="sub-title"><input name="undergraduate" type="radio" id="engg">Engg</div>
+                <div class="sub-title"><input name="undergraduate" type="radio" id="bcom">B.COM</div>
+
+            </div>
+            <br>
+
+            <!-- Marks -->
+
+            <div>
+                <p class="sub-title">Marks</p>
+                <table>
+                    <tr>
+                        <th>
+                            Subject
+                        </th>
+                        <th>
+                            Marks
+                        </th>
+                        <th>
+                            Certificate
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            UG
+                        </td>
+                        <td>
+                            <input class="table-text-input" id="ug_marks"/>
+                        </td>
+                        <td>
+                            <input type="file" id="ug_marks_sheet"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PUC
+                        </td>
+                        <td>
+                            <input class="table-text-input" id="puc_marks"/>
+                        </td>
+                        <td>
+                            <input type="file" id="puc_marks_sheet"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10th
+                        </td>
+                        <td>
+                            <input class="table-text-input" id="grade_10_marks"/>
+                        </td>
+                        <td>
+                            <input type="file" id="grade_10_marks_sheet"/>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <br>
+
+
+
+            <!-- Merit -->
+            <div>
+                <p class="sub-title">Merit</p>
+                <div class="sub-title"><input name="merit" type="radio" id="sc_st">SC/ST</div>
+                <div class="sub-title"><input name="merit" type="radio" id="general">Genrak</input></div>
+                <div class="sub-title"><input name="merit" type="radio" id="obc">OBC</input></div>
+            </div>
+            <br>
+
+            <button>Submit</button>
+            <button>Reset</button>
+
+        </form>
+
+
+    </body>
+
+</html>
